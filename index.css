@@ -107,6 +107,14 @@ a {
     display: none;
 }
 
+.newaddition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
 .product:hover, .pricing{
     display: flex;
 }
