@@ -83,7 +83,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid grey;
+    border: 3px solid white;
+    border-radius: 10px;
     flex-wrap:  nowrap;
     width: 18vw;
     height: 40vh;
@@ -92,4 +93,37 @@ a {
 .product h1{
     padding: 0;
     margin: 0;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coins {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.coins h1:nth-child(n) {
+    margin-top: 4vh;
+}
+
+.coins h1:nth-child(1) {
+    border: 3px solid orange;
+    border-radius: 4px;
+    background-color: orange;
+}
+
+.coins h1:nth-child(2) {
+    border: 3px solid grey;
+    border-radius: 4px;
+    background-color: grey;
+}
+
+.infomessage {
+    margin-top: 5vh;
+    margin-left: 3vw;
 }
