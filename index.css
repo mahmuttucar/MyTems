@@ -187,6 +187,22 @@ i {
     margin-top: 5%;
 }
 
+.comments div:nth-child(2) {
+    display: none;
+    margin-left: 1000px;
+    transition: 500ms;
+}
+.comments:hover div:nth-child(2) {
+    display: block;
+    animation: commentsanimation 5s forwards;
+}
+
+@keyframes commentsanimation {
+    25%{margin-left: 5vw}
+    50%{margin-left: 2vw}
+    100%{margin-left: 0vw}
+}
+
 .commenttitle {
     display: flex;
     flex-direction: column;
