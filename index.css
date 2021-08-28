@@ -1,3 +1,5 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
 body {
     padding: 0;
     margin: 0;
@@ -6,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
+    align-items: center;
 }
 
 header {
@@ -22,6 +25,10 @@ a {
     text-decoration: none;
     color: white;
     font-size: 30px;
+}
+
+i {
+    color: white;
 }
 
 .webnav {
@@ -69,7 +76,7 @@ a {
 
 .mostpopular h1 {
     float: left;
-    margin-left: 10vw;
+    margin-left: 4vw;
 }
 
 .products {
@@ -90,6 +97,8 @@ a {
     /* height: 40vh; */
     height: 25vh;
     transition: 500ms;
+    justify-content: space-around;
+    margin-left: 4vw;
 }
 
 .product:hover {
@@ -148,11 +157,42 @@ a {
 
 .infomessage {
     margin-top: 5vh;
-    margin-left: 3vw;
     display: none;
-    transition: 5s;
+    /* margin-left: 3vw; */
+    transition: 3s;
+    margin-left: 1000px;
 }
 
 .product:hover .infomessage {
     display: block;
+    animation: infomessagetest 2s forwards;
+}
+
+@keyframes infomessagetest {
+    25%{margin-left: 6vw;}
+    50%{margin-left: 5vw;}
+    75%{margin-left: 3vw;}
+    100%{margin-left: 3vw;}
+}
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.commenttitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.newi {
+    font-size: 20px;
+    color: blue;
 }
